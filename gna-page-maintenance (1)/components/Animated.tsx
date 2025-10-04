@@ -15,6 +15,7 @@ export const itemVariants: Variants = {
       duration: 0.6,
       ease: 'easeOut',
     },
+    
   },
 };
 
