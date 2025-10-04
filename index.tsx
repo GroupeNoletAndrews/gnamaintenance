@@ -14,3 +14,8 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+
+
+
+// Adding comments to the code
