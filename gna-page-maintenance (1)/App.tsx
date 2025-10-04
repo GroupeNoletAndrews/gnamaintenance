@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { CursorProvider } from './components/Cursor';
-import Prism from './components/Prism';
+import Prism from './components/PrismOptimized';
 import TiltedCard from './components/TiltedCard';
 import { motion } from 'framer-motion';
 
