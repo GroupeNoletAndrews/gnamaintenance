@@ -32,7 +32,6 @@ export default function App() {
 
   return (
     <CursorProvider>
-      {/* Background Prism */}
       <div className="fixed inset-0 -z-10 opacity-50">
         <Prism
           animationType="3drotate"
