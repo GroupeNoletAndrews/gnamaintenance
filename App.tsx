@@ -68,10 +68,10 @@ export default function App() {
       </div>
 
       <div className="bg-transparent text-gray-300 h-full w-full flex items-center justify-center text-center">
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
             {/* Logo */}
             <motion.div 
-              className="mx-auto h-auto w-full max-w-2xl mb-8"
+              className="mx-auto h-auto w-full max-w-xs sm:max-w-md lg:max-w-2xl mb-6 sm:mb-8"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -80,9 +80,9 @@ export default function App() {
                     imageSrc="https://plexview.ca/assets/Nolet__andrews_blanc-CHc9YYqz.png"
                     altText="Groupe Nolet & Andrews"
                     containerWidth="100%"
-                    containerHeight="300px"
+                    containerHeight="200px"
                     imageWidth="100%"
-                    imageHeight="300px"
+                    imageHeight="200px"
                     scaleOnHover={1.05}
                     rotateAmplitude={8}
                     showMobileWarning={false}
@@ -96,7 +96,7 @@ export default function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             >
-              <p className="mt-4 max-w-2xl mx-auto text-3xl text-gray-300">
+              <p className="mt-4 max-w-2xl mx-auto text-lg sm:text-xl lg:text-3xl text-gray-300 px-4">
                   Notre site web est en pleine reconstruction.
                   <br />
                   Revenez bientôt pour découvrir notre nouvelle plateforme.
@@ -104,13 +104,13 @@ export default function App() {
             </motion.div>
 
             <motion.div
-              className="mt-12 max-w-md mx-auto"
+              className="mt-8 sm:mt-12 max-w-md mx-auto px-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
             >
               <div className="flex items-center justify-center space-x-2 mb-4">
-                <span className="text-sm text-gray-400">Construction en cours</span>
+                <span className="text-xs sm:text-sm text-gray-400">Construction en cours</span>
                 <motion.div
                   className="flex space-x-1"
                   animate={{ opacity: [0.3, 1, 0.3] }}
@@ -132,7 +132,7 @@ export default function App() {
               </div>
               
               <motion.p
-                className="mt-2 text-sm text-gray-400"
+                className="mt-2 text-xs sm:text-sm text-gray-400"
                 animate={{ opacity: [0.5, 1, 0.5] }}
                 transition={{ duration: 2, repeat: Infinity }}
               >
@@ -141,12 +141,12 @@ export default function App() {
             </motion.div>
 
             <motion.div
-              className="mt-8"
+              className="mt-6 sm:mt-8 px-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 1, ease: "easeOut" }}
             >
-              <p className="text-lg text-gray-400 italic">
+              <p className="text-sm sm:text-base lg:text-lg text-gray-400 italic">
                 "La patience est la clé de la perfection"
               </p>
             </motion.div>

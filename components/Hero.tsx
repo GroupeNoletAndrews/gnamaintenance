@@ -47,14 +47,14 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
   return (
     <section className="relative h-full flex items-center justify-center text-center overflow-hidden">
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`mx-auto h-auto w-full max-w-2xl mb-8 transition-all transform ease-in-out ${isLoaded ? 'opacity-100 scale-100 delay-200 duration-1000' : 'opacity-0 scale-95'}`}>
+        <div className={`mx-auto h-auto w-full max-w-xs sm:max-w-md lg:max-w-2xl mb-6 sm:mb-8 transition-all transform ease-in-out ${isLoaded ? 'opacity-100 scale-100 delay-200 duration-1000' : 'opacity-0 scale-95'}`}>
           <TiltedCard
               imageSrc="https://plexview.ca/assets/Nolet__andrews_blanc-CHc9YYqz.png"
               altText="Groupe Nolet & Andrews"
               containerWidth="100%"
-              containerHeight="300px"
+              containerHeight="200px"
               imageWidth="100%"
-              imageHeight="300px"
+              imageHeight="200px"
               scaleOnHover={1.05}
               rotateAmplitude={8}
               showMobileWarning={false}
@@ -63,10 +63,10 @@ const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
         </div>
         <h1 className="sr-only">Groupe Nolet & Andrews</h1>
         
-        <p className={`mt-4 max-w-2xl mx-auto text-3xl text-gray-300 transition-all transform ease-in-out ${isLoaded ? 'opacity-100 translate-y-0 delay-500 duration-700' : 'opacity-0 translate-y-4'}`}>
-          Plus de 30 ans d’expérience en consultation et gestion, mis au service des PME et grandes entreprises du Québec.
+        <p className={`mt-4 max-w-2xl mx-auto text-lg sm:text-xl lg:text-3xl text-gray-300 px-4 transition-all transform ease-in-out ${isLoaded ? 'opacity-100 translate-y-0 delay-500 duration-700' : 'opacity-0 translate-y-4'}`}>
+          Plus de 30 ans d'expérience en consultation et gestion, mis au service des PME et grandes entreprises du Québec.
         </p>
-        <div className="mt-14 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+        <div className="mt-8 sm:mt-14 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center px-4">
           <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
             <CursorHover
               as="button"
